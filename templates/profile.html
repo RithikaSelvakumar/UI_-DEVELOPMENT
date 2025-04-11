@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 600px;
+            height: 300px;
+        }
+
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
+        }
+
+        h2 {
+            color: white;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        p {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            color: white;
+        }
+
+        .github {
+            background: #333;
+        }
+
+        .linkedin {
+            background: #0077b5;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="static/my-photo.jpg" alt="My Photo" class="profile-photo">
+        <h2>Rithika Selvakumar 
+            71762232042</h2>
+        <h2>Data Analyst | AI Enthusiast | Web Developer
+        </h2>
+
+        <div class="social-links">
+            <a href="https://github.com/RithikaSelvakumar" target="_blank" class="github">GitHub</a>
+            <a href="https://www.linkedin.com/in/rithika-selvakumar/" target="_blank" class="linkedin">LinkedIn</a>
+        </div>
+    </div>
+
+</body>
+</html>
